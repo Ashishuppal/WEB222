@@ -1,0 +1,83 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://image.ibb.co/fOur3b/favicon.png" />
+    <meta name="theme-color" content="#1885ed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <title>WEB222 Final Assessment – Fall 2021
+    </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <h1 class="header__title">WEB222<span class="header__light"> Assignment</span></h1>
+        </div>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+
+        <div class="header__menu">
+            <nav id="navbar" class="header__nav collapse">
+                <ul class="header__elenco">
+                    <li class="header__el"><a href="main.html" class="header__link">Main</a></li>
+                    <li class="header__el"><a href="honestly.html" class="header__link">Honestly</a></li>
+                    <li class="header__el"><a href="contact.html" class="header__link">Contact</a></li>
+                    <li class="header__el"><a href="resume.html" class="header__link">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div class="sect sect--padding-bottom">
+        <div class="container">
+            <div class="row row--center">
+                <h1 class="row__title">
+                    Welcome To Contact Page
+                </h1>
+
+            </div>
+            <div class="row row--center row--margin">
+                <div class="col-md-4 col-sm-4 price-box price-box--purple">
+                    <div class="price-box__wrap">
+                        <form method="post" action="https://formspree.io/" onsubmit="return submitForm(this)">
+                            <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+                            <input name="email" type="text" class="feedback-input" placeholder="Email" required />
+                            <input name="address" type="text" class="feedback-input" placeholder="Address" required />
+                            <input name="city" type="text" class="feedback-input" placeholder="City" required />
+                            <input name="postalcode" type="text" class="feedback-input" placeholder="Postal Code"
+                                required />
+                            <label><b>Select Option</b></label>
+                            <br>
+                            Question: <input type="radio" name="Question" id="Question">
+                            &nbsp;&nbsp;&nbsp; Comment: <input type="radio" name="Comment" id="Comment">
+                            &nbsp;&nbsp;&nbsp; Hiring: <input onclick="ShowHideDiv()" type="radio" name="Hiring"
+                                id="Hiring">
+                            <br><br>
+                            <div id="dvtext" style="display: none">
+                                <input type="text" class="feedback-input" id="txtBox" placeholder="hourly rate" />
+                            </div>
+                            <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+                            <input type="submit" value="SUBMIT" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-6">
+                    <h1 class="footer__title">ASHISH <span class="footer__light">UPPAL</span></h1>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
